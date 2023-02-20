@@ -47,6 +47,7 @@ namespace FlightSimulator
         [DataMember]
         ///<value> Угол для изменения высоты </value>
         private double _angle_climb;
+        
         [DataMember]
         ///<value> Ограничения угла для изменения высоты </value>
         private const double _max_angle_climb_abs = 30;
@@ -179,4 +180,5 @@ namespace FlightSimulator
             base.AddForce(force_value_x, force_value_y);
         }
     }
+    
 }
